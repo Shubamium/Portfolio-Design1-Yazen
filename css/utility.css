@@ -9,3 +9,7 @@
 .tinted-grey{
     color: #2D2833;
 }
+
+.less-emphasis{
+    opacity: 0.5;
+}

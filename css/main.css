@@ -61,3 +61,50 @@ header{
             background-color: var(--red);
             transition: background-color 200ms ;
         }
+
+
+.title{
+    background-color: var(--gray);
+    background-image: url("../media/bg3.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    
+    padding: 250px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .title .title-img{
+        min-height: 100%;
+    }
+
+    .title h1{
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 80%;
+    }
+
+    .title p{
+        font-size: 1.2rem;
+        letter-spacing: .1em ;
+        margin-bottom: 1em;
+    }
+    .icons{
+        font-size: 25px;
+        display: flex;
+        gap: 1em;
+    }
+
+    .icons i{
+        transition: all 200ms ease-out;
+    }
+    .icons i:hover{
+        transform: translateY(-20%);
+        color: rgb(184, 184, 184);
+        transition: all 500ms ease-out;
+        cursor: pointer;
+    }

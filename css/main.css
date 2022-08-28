@@ -166,6 +166,7 @@ header{
     justify-content: center;
 
     position: relative;
+    padding: 10px 0;
 }
 
     .bio-grid{
@@ -241,14 +242,26 @@ header{
         content: '';
         position: absolute;
         bottom: 100%;
-        left: 0;
         width: 100%;
         aspect-ratio: 12/3;
-        background-image: url("../media/wave3.svg");
         background-size: cover;
         background-position: bottom;
+        
+        background-image: url("../media/wave3.svg");
     }
 
+    .bio::after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        aspect-ratio: 9/3;
+        margin-top: -1px;
+        background-size:cover;
+        background-position: top;
+        background-image: url("../media/wave-bottom.svg");
+    
+    }
 
 .features{
     min-height: 100vh;

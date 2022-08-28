@@ -13,3 +13,12 @@
 .less-emphasis{
     opacity: 0.5;
 }
+
+.bold{
+    font-weight: bold;
+
+}
+
+.dr-shadow-all{
+    filter: drop-shadow(0px 0px 4px black);
+}

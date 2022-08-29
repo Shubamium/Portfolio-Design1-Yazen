@@ -248,7 +248,7 @@ header{
         aspect-ratio: 12/3;
         background-size: cover;
         background-position: bottom;
-        
+        margin-bottom: -1px;
         background-image: url("../media/wave3.svg");
     }
 

@@ -22,6 +22,8 @@ header{
     align-items: stretch;
     padding-left: 50px;
     margin: 20px 0;
+
+    overflow-x: hidden;
 }
 
     header > h2{
@@ -177,7 +179,7 @@ header{
         gap: 3em;
         justify-items: center;
 
-        width: 1200px;
+        width: 800px;
     }
 
     .bio-grid img{
@@ -301,4 +303,44 @@ header{
         .card i{
             font-size: 40px;
         }
+
+@media screen and (min-width:1250px) {
+        .collapse-bar{
+            display: none !important;
+        }
     
+}
+@media screen and (max-width:1250px){
+
+    .collapse-bar{
+        display: block;
+    }
+    .collapse-bar i{
+        font-size: 2rem;
+    }
+    .navigation{
+        justify-content: flex-end;
+    }
+    
+    .navigation li:not(.collapse-bar){
+        display: none;
+    }
+    .bio-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .text-part, .info-box{
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+        .info-box p{
+            margin: 1em 0;
+            font-size: 1.2rem;
+        }
+
+}
